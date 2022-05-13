@@ -12,4 +12,8 @@ A01253696
 ## LISTADO DE EJERCICIOS
 * El programa prueba.c es un ejemplo para compilación con el lenguaje c
 * El programa prueba.py es un ejemplo para ejecución con python
-
+* El programa game1.py es un ejemplo de un programa de dibujo
+* El programa game2.py es un ejemplo de un juego de la culebra
+* El programa game3.py es un ejemplo de un juego de pac man
+* El programa game4.py es un ejemplo de un juego de tiro parabolico 
+* El programa game5.py es un ejemplo de un juego de memoria
