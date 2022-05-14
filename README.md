@@ -21,5 +21,5 @@ A01253696
 
 ## Link del Video
 
-https://tecmx-my.sharepoint.com/personal/a00232280_tec_mx/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fa00232280%5Ftec%5Fmx%2FDocuments%2Fescuela%2FUni%2FEl%20arte%20de%20la%20programacion%2Fvideo3138022037%2Emp4&parent=%2Fpersonal%2Fa00232280%5Ftec%5Fmx%2FDocuments%2Fescuela%2FUni%2FEl%20arte%20de%20la%20programacion&ga=1
+[Enlace al Video](https://tecmx-my.sharepoint.com/personal/a00232280_tec_mx/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fa00232280%5Ftec%5Fmx%2FDocuments%2Fescuela%2FUni%2FEl%20arte%20de%20la%20programacion%2Fvideo3138022037%2Emp4&parent=%2Fpersonal%2Fa00232280%5Ftec%5Fmx%2FDocuments%2Fescuela%2FUni%2FEl%20arte%20de%20la%20programacion&ga=1)
 
