@@ -3,12 +3,13 @@ Integrantes:
     Fernando de Jesús Mendivil Terminel - A00232280
     Randy Oliver Ortega Cota - A00232304
     Juan Pablo Capobianco Ramos - A01252252
+    Jorge Leopoldo Jiménez Velásquez - A01253696
     
 Aportes innovadores:
     Paredes que se cierran (idea de oliver)
     Decoración a la comida (idea de jorge)
     Comida envenenada (idea de fer)
-    Color diferente por cada 10 comidas (idea de Juan Pablo)
+    Color diferente por cada 2 comidas (idea de Juan Pablo)
 """
 
 from turtle import *
@@ -32,22 +33,25 @@ def change(x, y):
     #esta funcion sirve para cambiar la posicion de la serpiente
     aim.x = x
     aim.y = y
+    #se dibujan los limites jugables en cada entrada de movimiento
+    limites(len(snake))
 
 def inside(head, size):
     #return -200 < head.x < 190 and -200 < head.y < 190
     return (-200+size*2) < head.x < (190-size*2) and (-200+size*2) < head.y < (190-size*2)
 
 def limites(size):
-    line(-200+size*2, -200+size*2, 190-size*2, 190)
-    line(190-size*2, )
-    #square(-200+size*2, -200+size*2, 40000, "black")
+    pencolor("black")
+    line(-200+size*2, -200+size*2, 190-size*2, -200+size*2)
+    line(-200+size*2, 190-size*2, 190-size*2, 190-size*2)
+    line(-200+size*2, -200+size*2, -200+size*2, 190-size*2)
+    line(190-size*2, -200+size*2, 190-size*2, 190-size*2)
 
 def move():
-    limites()
     #esta funcion sirve para mover a la serpiente
     head = snake[-1].copy()
     head.move(aim)
-
+    
     if not inside(head, len(snake)) or head in snake:
         #con esta funcion se choca y se pone roja la cabecita
         square(head.x, head.y, 9, 'red')
