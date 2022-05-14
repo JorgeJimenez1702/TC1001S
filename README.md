@@ -17,3 +17,4 @@ A01253696
 * El programa game3.py es un ejemplo de un juego de pac man
 * El programa game4.py es un ejemplo de un juego de tiro parabolico 
 * El programa game5.py es un ejemplo de un juego de memoria
+* Proyecto: el proyecto es un videojuego de la viborita con distintos cambios de diseño y nuevas mecánicas
