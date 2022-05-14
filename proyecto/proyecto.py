@@ -24,20 +24,19 @@ snake = [vector(10, 0)]
 aim = vector(0, -10)
 ran = random.randint(0, 4)
 ran2 = random.randint(0, 4)
-a = ["gray", "blue", "yellow", "green", "purple", "red", "pink", "#e1e1e1", "#00ffff", "#FFD700"]
+a = ["gray", "blue", "yellow", "green", "purple", "red", "pink", "#e1e1e1", "#00ffff", "#FFD700"] #Distintos coloeres de la serpiente (Jorge)
 foodcolors = ["green", "red", "yellow", "purple", "brown"] # colores de comidas mas comunes
 
 foodCounter = 0
 
 def change(x, y):
-    #esta funcion sirve para cambiar la posicion de la serpiente
+    #esta funcion sirve para cambiar la posicion de la serpiente (Jorge)
     aim.x = x
     aim.y = y
-    #se dibujan los limites jugables en cada entrada de movimiento
+    #se dibujan los limites jugables en cada entrada de movimiento (Jorge)
     limites(len(snake))
 
 def inside(head, size):
-    #return -200 < head.x < 190 and -200 < head.y < 190
     return (-200+size*2) < head.x < (190-size*2) and (-200+size*2) < head.y < (190-size*2)
 
 def limites(size):
@@ -48,12 +47,12 @@ def limites(size):
     line(190-size*2, -200+size*2, 190-size*2, 190-size*2)
 
 def move():
-    #esta funcion sirve para mover a la serpiente
+    #esta funcion sirve para mover a la serpiente (Jorge)
     head = snake[-1].copy()
     head.move(aim)
     
     if not inside(head, len(snake)) or head in snake:
-        #con esta funcion se choca y se pone roja la cabecita
+        #con esta funcion se choca y se pone roja la cabecita (Jorge)
         square(head.x, head.y, 9, 'red')
         update()
         return
@@ -61,7 +60,7 @@ def move():
     snake.append(head)
 
     if head == food:
-        #esta funcion cambia la posicion de la comida cuando se la come
+        #esta funcion cambia la posicion de la comida cuando se la come (Jorge)
         print('Snake:', len(snake))
         food.x = randrange(-15, 15) * 10
         food.y = randrange(-15, 15) * 10
@@ -81,15 +80,15 @@ def move():
     clear()
 
     for body in snake:
-        #Esto cambia el color de la serpiente
+        #Esto cambia el color de la serpiente (Jorge)
         if (len(snake) < 20):
             color = a[len(snake) // 2]
         else:
             color = a[9]
-        square(body.x, body.y, 9, color)#esta funcion crea a la serpiente
+        square(body.x, body.y, 9, color)#esta funcion crea a la serpiente (Jorge)
 
     if (len(snake) < 25):
-        square(food.x, food.y, 9, foodcolors[len(snake) // 5])#esta funcion dibuja el cuadradito
+        square(food.x, food.y, 9, foodcolors[len(snake) // 5])#esta funcion dibuja el cuadradito (Jorge)
     else:
         square(food.x, food.y, 9, foodcolors[4])
     square(amoebas.x, amoebas.y, 9, "gray")#esta funcion dibuja las amoebas (fer)
