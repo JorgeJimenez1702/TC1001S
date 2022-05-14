@@ -1,4 +1,10 @@
-#Juego Pac Man
+"""
+Ejercicios:
+1. Fantasmas más listos
+2. Cambiar el tablero
+3. Fantasmas más rápidos
+"""
+
 from random import choice
 from turtle import *
 from numpy import sign
@@ -80,7 +86,8 @@ def valid(point):
 
 
 def world():
-    """Draw world using path."""
+    """Punto 2: las siguientes 2 lineas son los colores del fondo
+    y del camino por el que van pacman y los fantasmas, respectivamente"""
     bgcolor('gray')
     path.color('green')
 
@@ -127,6 +134,9 @@ def move():
             if not valid(point):
                 point.move(vector((-course.x/speed), (-course.y/speed)))
         else:
+            """Punto 1 y 3: los fantasmas tienen una posibilidad de perseguir
+            a pacman, aparte de que su velocidad está determinada por la 
+            variable "speed", la cual es igual a 10 en este caso"""
             options = [
                 vector(speed, 0),
                 vector(-speed, 0),
